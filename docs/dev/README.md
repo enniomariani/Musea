@@ -11,7 +11,7 @@ Die Softwarelösung besteht aus drei Apps, die über das Netzwerk kommunizieren:
 
 **Verbindungsrollen:**
 - Musea Player sind immer die Server. Client-Apps (momentan Musea Guide und Admin) können gleichzeitig die Verbindung mit mehreren Musea Playern offen haben.
-- Musea Admin und Musea Guide agieren als Rolle "admin", wenn sie mit einem Musea Player verbunden sind. Nur eine dieser Apps kann gleichzeitig verbunden sein.
+- Musea Admin und Musea Guide agieren als Rolle "admin", wenn sie mit einem Musea Player verbunden sind. Nur eine dieser Apps kann gleichzeitig mit einem Musea Player verbunden sein.
 - Musea Player akzeptieren aber zusätzlich eine Verbindung mit der Rolle "user". Dies kann z.B. ein Touchscreen für Benutzer sein. Wenn der Musea Player eine "admin"-Verbindung erhält, sendet er ein "blockieren"-Signal an die "user"-Verbindung, der Touchscreen wird gesperrt solange die "admin"-App verbunden ist.
 
 **npm Pakete**
