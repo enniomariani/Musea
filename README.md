@@ -6,6 +6,8 @@
 
 Ein System zur Steuerung und Verwaltung von Multimedia-Installationen in Ausstellungen und Museen.
 
+![Musea-Info](docs/images/musea-info.png)
+
 ## Was kann Musea?
 
 Perfekt für Führungen, Dauerausstellungen und interaktive Installationen:
