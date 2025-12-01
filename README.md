@@ -5,6 +5,9 @@
 [![Musea-Guide](https://img.shields.io/github/actions/workflow/status/enniomariani/musea-guide/build-test-release.yml?label=Musea-Guide)](https://github.com/enniomariani/musea-guide/actions)
 
 Ein System zur Steuerung und Verwaltung von Multimedia-Installationen in Ausstellungen und Museen.
+
+## Was kann Musea?
+
 Perfekt für Führungen, Dauerausstellungen und interaktive Installationen:
 
 📚 **Zentrale Medienverwaltung** – Mediendateien (Videos und Bilder) zentral verwalten
