@@ -9,7 +9,7 @@ Ein System zur Steuerung und Verwaltung verschiedener Medienstationen.
 🎥 [Info-Video](https://www.youtube.com/watch?v=k5L5h5DrS04)
 
 ## Hauptfunktionen
-📚 **Zentrale Medienverwaltung** – Alle Mediendateien (Videos und Bilder) zentral verwalten
+📚 **Zentrale Medienverwaltung** – Mediendateien (Videos und Bilder) aller Medien Player zentral verwalten
 
 📱 **Tablet-Steuerung** – Über intuitive Tablet-Anwendungen die Inhalte steuern
 
