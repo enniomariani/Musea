@@ -6,7 +6,7 @@
 
 Ein System zur Steuerung und Verwaltung verschiedener Medienstationen.
 
-🎥 [Info-Video](https://www.youtube.com/watch?v=k5L5h5DrS04) zur Installation und den Basisfunktionen
+🎥 [Info-Video (2:50)](https://www.youtube.com/watch?v=k5L5h5DrS04) zur Installation und den Basisfunktionen
 
 ## Hauptfunktionen
 📚 **Zentrale Medienverwaltung** – Mediendateien (Videos und Bilder) aller Medien Player zentral verwalten
