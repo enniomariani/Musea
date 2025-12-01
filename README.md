@@ -23,7 +23,6 @@ interaktive Installationen.
 
 ## Für wen ist Musea gedacht?
 - Museen mit Multimedia-Installationen
-- Szenografen und Ausstellungsgestalterinnen
 - Kulturinstitutionen mit wechselnden Ausstellungen
 
 ## Angebot
