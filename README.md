@@ -6,10 +6,12 @@
 
 Ein System zur Steuerung und Verwaltung verschiedener Medienstationen.
 
-🎥 [Info-Video (2:50)](https://www.youtube.com/watch?v=k5L5h5DrS04) zur Installation und den Basisfunktionen
+## Was kann Musea?
+Musea ist ein System zur zentralen Steuerung von Multimedia-Installationen 
+in Ausstellungen und Museen. Perfekt für Führungen, Dauerausstellungen und 
+interaktive Installationen.
 
-## Hauptfunktionen
-📚 **Zentrale Medienverwaltung** – Mediendateien (Videos und Bilder) aller Medien Player zentral verwalten
+📚 **Zentrale Medienverwaltung** – Mediendateien (Videos und Bilder) zentral verwalten
 
 📱 **Tablet-Steuerung** – Über intuitive Tablet-Anwendungen die Inhalte steuern
 
@@ -19,6 +21,19 @@ Ein System zur Steuerung und Verwaltung verschiedener Medienstationen.
 
 🔧 **Modular erweiterbar** – Flexible Erweiterung der Medien-Player möglich
 
+## Für wen ist Musea gedacht?
+- Museen mit Multimedia-Installationen
+- Szenografen und Ausstellungsgestalterinnen
+- Kulturinstitutionen mit wechselnden Ausstellungen
+
+## Angebot
+Die Software ist Open Source und kostenlos nutzbar. 
+Ich biete professionellen Support für:
+- Installation und Einrichtung
+- Schulung des Personals
+- Anpassungen und Erweiterungen für Ihre spezifischen Anforderungen
+
+📧 Kontakt: mail@enniomariani.ch
 
 ## Benötigte Kenntnisse für die Installation
 - IP-Adressen aus Windows auslesen
@@ -27,6 +42,9 @@ Ein System zur Steuerung und Verwaltung verschiedener Medienstationen.
 - Text-Datei anlegen und editieren (Musea-Guide)
 
 ## Schnellstart für Windows
+
+🎥 [Info-Video (2:50)](https://www.youtube.com/watch?v=k5L5h5DrS04) zur Installation und Basiskonfiguration
+
 **Computer A** (Computer mit Beamer oder Monitor)
 - [Musea-Player](https://github.com/enniomariani/Musea-Player) herunterladen
 - Programm öffnen → Wichtig: Firewallmeldung akzeptieren (siehe [detaillierte Anleitung](https://github.com/enniomariani/Musea-Player))
@@ -54,10 +72,6 @@ Ein System zur Steuerung und Verwaltung verschiedener Medienstationen.
 - Contents anklicken → Medien sollten auf Computer A abgespielt werden
 
 🚧 [Mehr Informationen](docs/user) für Benutzer:innen.
-
-## Kontakt und Support
-Falls sie Hilfe benötigen oder eine neue Funktion wünschen, melden sie sich gerne:
-📧 **mail@enniomariani.ch**
 
 ## Anforderungen an das bestehende System
 - Alle beteiligten Geräte müssen im selben Subnetz sein
