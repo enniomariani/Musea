@@ -31,18 +31,11 @@ Perfekt für Führungen, Dauerausstellungen und interaktive Installationen:
 
 ## Für technisches Personal
 
-## 📦 npm Pakete
-- **[musea-client](https://github.com/enniomariani/Musea-Client)**  [![npm version](https://img.shields.io/npm/v/musea-client.svg)](https://www.npmjs.com/package/musea-client) - Medien auf den Servern verwalten, synchronisieren, löschen und abspielen
-- **[musea-server](https://github.com/enniomariani/Musea-Server)**  [![npm version](https://img.shields.io/npm/v/musea-server.svg)](https://www.npmjs.com/package/musea-server) - Server der Medien-Player: Speichert/löscht Medien, sendet DMX-Signale an angehängte Lampen
+[Dokumentation für technisches Personal](docs/tech/README.md)
 
-## Kompatibilität verschiedener Versionen
-Die Versions-Nummern der Apps orientieren sich an der [semantischen Versionierung](https://semver.org/).
+## Für Entwickler:innen
 
-Nur Apps mit derselben Major-Version (z.B. 2.X.Y) sind kompatibel.
-
-## Technische Übersicht
-
-🚧 [Technische Dokumentation](docs/dev/README.md)
+[Dokumentation für Entwickler:innnen](docs/dev/README.md)
 
 ## Förderung & Danksagung
 Dieses Projekt wurde grösstenteils durch das [Naturama Aargau](https://naturama.ch/) finanziert.
