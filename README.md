@@ -6,6 +6,8 @@
 
 Ein System zur Steuerung und Verwaltung verschiedener Medienstationen.
 
+🎥 [Info-Video](https://www.youtube.com/watch?v=k5L5h5DrS04)
+
 ## Hauptfunktionen
 📚 **Zentrale Medienverwaltung** – Alle Mediendateien (Videos und Bilder) zentral verwalten
 
@@ -16,6 +18,7 @@ Ein System zur Steuerung und Verwaltung verschiedener Medienstationen.
 💡 **DMX-Lichtsteuerung** – Beleuchtung passt sich automatisch den Medien an
 
 🔧 **Modular erweiterbar** – Flexible Erweiterung der Medien-Player möglich
+
 
 ## Benötigte Kenntnisse für die Installation
 - IP-Adressen aus Windows auslesen
