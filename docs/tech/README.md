@@ -6,6 +6,13 @@
 - Ping-Befehle in der Windows-Firewall freigeben (Musea-Player)
 - Text-Datei anlegen und editieren (Musea-Guide)
 
+## Anforderungen an das bestehende System
+- Alle beteiligten Geräte müssen im selben Subnetz sein
+- Anpassung der Firewall-Einstellungen auf den Musea Playern → siehe [detaillierte Anleitung](https://github.com/enniomariani/Musea-Player)
+- Netzwerk-Kommunikation erfolgt standardmässig über Port 5000
+- Auf dem Computer, auf dem Musea Player oder Musea Admin läuft sollte mindestens 3x so viel RAM zur Verfügung stehen wie die grösste Datei, die synchronisiert wird
+
+
 ## Schnellstart für Windows
 
 🎥 [Info-Video (2:50)](https://www.youtube.com/watch?v=k5L5h5DrS04) zur Installation und Basiskonfiguration
@@ -36,12 +43,6 @@
 - Medienstation öffnen
 - Contents anklicken → Medien sollten auf Computer A abgespielt werden
 
-## Anforderungen an das bestehende System
-- Alle beteiligten Geräte müssen im selben Subnetz sein
-- Anpassung der Firewall-Einstellungen auf den Musea Playern → siehe [detaillierte Anleitung](https://github.com/enniomariani/Musea-Player)
-- Netzwerk-Kommunikation erfolgt standardmässig über Port 5000
-- Auf dem Computer, auf dem Musea Player oder Musea Admin läuft sollte mindestens 3x so viel RAM zur Verfügung stehen wie die grösste Datei, die synchronisiert wird
-
 ## Einschränkungen
 - Die Apps sind momentan nur für Windows 10 und 11 verfügbar
 - Musea Admin: Medienstationen und hinzugefügte Player können momentan umbenannt, aber nicht gelöscht werden
@@ -53,11 +54,11 @@
 - **[Musea Player](https://github.com/enniomariani/Musea-Player)** - Medien abspielen, DMX-Lichter steuern
 - **[Musea Admin](https://github.com/enniomariani/Musea-Admin)** - Musea Player zu Medienstationen zusammenführen, Ordner und Contents erstellen, Medien hinzufügen
 - **[Musea Guide](https://github.com/enniomariani/Musea-Guide)** - Medien auf den Playern synchronisiert abspielen, Medien mit Tags zu Playlisten gruppieren
-- 
-## Kompatibilität verschiedener Versionen
-Die Versions-Nummern der Apps orientieren sich an der [semantischen Versionierung](https://semver.org/).
 
+## Kompatibilität verschiedener Versionen
 Nur Apps mit derselben Major-Version (z.B. 2.X.Y) sind kompatibel.
+
+Die Versions-Nummern der Apps orientieren sich an der [semantischen Versionierung](https://semver.org/).
 
 ## Wichtige Begriffe und Datenstruktur
 Siehe [Wichtige Begriffe und Datenstruktur](../general/data-structure.md).
