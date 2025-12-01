@@ -14,7 +14,7 @@ Perfekt für Führungen, Dauerausstellungen und interaktive Installationen:
 
 📱 **Tablet-Steuerung** – Über intuitive Tablet-Anwendungen die Inhalte steuern
 
-🎵 **Flexible Playlists** – Medien mit Tags gruppieren für unterschiedliche Führungsthemen
+🎵 **Flexible Playlists** – Medien mit Tags zu Führungsthemen gruppieren
 
 🎬 **Synchrone Wiedergabe** – Videos werden synchron auf mehreren Displays abgespielt
 
