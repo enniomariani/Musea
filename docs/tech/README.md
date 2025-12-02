@@ -50,7 +50,7 @@
 - Soll ein Player von der einen in eine andere Medienstation verschoben werden, müssen alle Medien und Metadaten manuell gelöscht werden
 - Getestet mit Video-Dateien bis 1.5 GB
 
-## 🚀 Alle Programme
+## Alle Programme
 - **[Musea Player](https://github.com/enniomariani/Musea-Player)** - Medien abspielen, DMX-Lichter steuern
 - **[Musea Admin](https://github.com/enniomariani/Musea-Admin)** - Musea Player zu Medienstationen zusammenführen, Ordner und Contents erstellen, Medien hinzufügen
 - **[Musea Guide](https://github.com/enniomariani/Musea-Guide)** - Medien auf den Playern synchronisiert abspielen, Medien mit Tags zu Playlisten gruppieren
