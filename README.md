@@ -24,10 +24,6 @@ Perfekt für Dauerausstellungen, interaktive Installationen und Führungen:
 
 🔧 **Modular erweiterbar** – Flexible Erweiterung der Medien-Player möglich
 
-**Beispiel:** Für eine Kinder-Führung erstellt das Museumspersonal eine 
-Playlist mit allen kindgerecht aufbereiteten Stationen – per Tablet abrufbar 
-während der Führung.
-
 ## Für Museen & Ausstellungsgestalter:innen
 **Professioneller Support verfügbar:**
 - Installation & Einrichtung
