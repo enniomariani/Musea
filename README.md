@@ -10,7 +10,7 @@ Ein System zur Steuerung und Verwaltung von Multimedia-Installationen in Ausstel
 
 ## Was kann Musea?
 
-Perfekt für Führungen, Dauerausstellungen und interaktive Installationen:
+Perfekt für Dauerausstellungen, interaktive Installationen und Führungen:
 
 📚 **Zentrale Medienverwaltung** – Mediendateien (Videos und Bilder) zentral verwalten
 
@@ -31,12 +31,12 @@ während der Führung.
 ## Für Museen & Ausstellungsgestalter:innen
 **Professioneller Support verfügbar:**
 - Installation & Einrichtung
-- Schulung Ihres Personals
 - Anpassungen für spezifische Anforderungen
+- Schulung
+
+**Kontakt:** [mail@enniomariani.ch](mailto:mail@enniomariani.ch)
 
 **Referenz:** Software läuft im [Naturama Aargau](https://naturama.ch/)
-
-📧 Kontakt: [mail@enniomariani.ch](mailto:mail@enniomariani.ch)
 
 ## Für technisches Personal
 
