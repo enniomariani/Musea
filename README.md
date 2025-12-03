@@ -12,7 +12,7 @@ Ein System zur Steuerung und Verwaltung von Multimedia-Installationen in Ausstel
 
 Perfekt für Dauerausstellungen, interaktive Installationen und Führungen:
 
-📚 **Zentrale Medienverwaltung** – Mediendateien (Videos und Bilder) zentral verwalten
+📚 **Zentrale Medienverwaltung** – Mediendateien (Videos und Bilder) zentral verwalten und in Ordnerstrukturen organisieren
 
 📱 **Tablet-Steuerung** – Über intuitive Tablet-Anwendungen die Inhalte steuern
 
