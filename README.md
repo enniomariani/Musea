@@ -25,14 +25,15 @@ Perfekt für Dauerausstellungen, interaktive Installationen und Führungen:
 🔧 **Modular erweiterbar** – Flexible Erweiterung der Medien-Player möglich
 
 ## Für Museen & Ausstellungsgestalter:innen
+
+Die Software ist Open Source und kostenlos nutzbar. 
+
 **Professioneller Support verfügbar:**
 - Installation & Einrichtung
 - Anpassungen für spezifische Anforderungen
 - Schulung
 
 **Kontakt:** [mail@enniomariani.ch](mailto:mail@enniomariani.ch)
-
-**Referenz:** Software läuft im [Naturama Aargau](https://naturama.ch/)
 
 ## Für technisches Personal
 
