@@ -22,7 +22,7 @@ Perfekt für Dauerausstellungen, interaktive Installationen und Führungen:
 
 💡 **DMX-Lichtsteuerung** – Beleuchtung passt sich automatisch den Medien an
 
-🔧 **Modular erweiterbar** – Flexible Erweiterung der Medien-Player möglich
+🔧 **Modular erweiterbar** – Musea-Player laufen autonom oder über Touchscreen gesteuert und sind flexibel erweiterbar
 
 ## Für Museen & Ausstellungsgestalter:innen
 
