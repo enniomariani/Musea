@@ -1,5 +1,14 @@
 # Technische Dokumentation
 
+## Wichtige Begriffe und Datenstruktur
+**Medienstation**: Gruppe von Musea Playern, die synchronisiert Medien abspielen
+
+**Controller**: Musea Player, der die Datenstruktur speichert  
+
+**Content**: Medieninhalt, der auf Playern abgespielt wird  
+
+→ [Vollständige Liste und Datenstruktur](../general/data-structure.md)
+
 ## Gesamtarchitektur
 Die Softwarelösung besteht aus drei Apps, die über das Netzwerk kommunizieren:
 
@@ -9,67 +18,35 @@ Die Softwarelösung besteht aus drei Apps, die über das Netzwerk kommunizieren:
 
 ![Archtiktur-Diagramm](../images/architecture.jpg)
 
-**Verbindungsrollen:**
-- Musea Player sind immer die Server. Client-Apps (momentan Musea Guide und Admin) können gleichzeitig die Verbindung mit mehreren Musea Playern offen haben.
-- Musea Admin und Musea Guide agieren als Rolle "admin", wenn sie mit einem Musea Player verbunden sind. Nur eine dieser Apps kann gleichzeitig mit einem Musea Player verbunden sein.
-- Musea Player akzeptieren aber zusätzlich eine Verbindung mit der Rolle "user". Dies kann z.B. ein Touchscreen für Benutzer sein. Wenn der Musea Player eine "admin"-Verbindung erhält, sendet er ein "blockieren"-Signal an die "user"-Verbindung, der Touchscreen wird gesperrt solange die "admin"-App verbunden ist.
-
 **npm Pakete**
 - **[musea-client](https://github.com/enniomariani/Musea-Client)**  [![npm version](https://img.shields.io/npm/v/musea-client.svg)](https://www.npmjs.com/package/musea-client) - Medien auf den Servern verwalten, synchronisieren, löschen und abspielen
 - **[musea-server](https://github.com/enniomariani/Musea-Server)**  [![npm version](https://img.shields.io/npm/v/musea-server.svg)](https://www.npmjs.com/package/musea-server) - Server der Medien-Player: Speichert/löscht Medien, sendet DMX-Signale an angehängte Lampen
-
-## Wichtige Begriffe und Datenstruktur
-Siehe [Wichtige Begriffe und Datenstruktur](../general/data-structure.md).
 
 ## Kompatibilität verschiedener Versionen
 Nur Apps mit derselben Major-Version (z.B. 2.X.Y) sind kompatibel.
 
 Die Versions-Nummern der Apps orientieren sich an der [semantischen Versionierung](https://semver.org/).
 
-## Rolle der Musea Player
-Ein Musea Player kann die Rolle **default** oder **Controller** haben.
+## Netzwerk & Kommunikation
 
-**Controller**
-- Der erste Musea Player, der über Musea Admin einer Medienstation zugeordnet wird, wird als Controller definiert
-- Alle Informationen zu Ordnerstruktur, Contents, IP-Adressen der anderen Musea Playern, etc. werden als contents.json auf dem Controller abgelegt
-- Die Apps mit der Rolle Controller können alles auch, was die Apps mit der Rolle Default können
+**Verbindungsrollen**
 
-**Default**
-- Alle anderen Musea Player in einer Medienstation haben diese Rolle
-- Kann Medien empfangen, löschen und abspielen
-- Kann "Systembefehle" empfangen - z.B. Audio muten/unmuten
+| App | Rolle | Gleichzeitige Verbindungen |
+|-----|-------|---------------------------|
+| **Musea Player** | Server | 1× Admin + 1× User |
+| **Musea Guide/Admin** | Client (Admin) | Exklusiv pro Player |
+| **Touchscreen für Besucher:innen** | Client (User) | Wird bei Admin-Zugriff blockiert |
 
-## Kommunikation zwischen den Apps
-Die Apps komunizieren über WebSocket-Verbindungen.
-Die gesamte Kommunikation wird von den Bibliotheken Musea Client und Musea Server übernommen.
-Für die Kommunikation wurde ein [eigenes Protokoll](network-protocol.md) entwickelt.
+**Netzwerkprotokoll**
 
-## Testkonzept
-- **Unit Tests**: Jest
-- **End-to-End Tests**: WebdriverIO
+- [eigenes Protokoll](network-protocol.md) über WebSockets
+- Implementiert in `musea-client` und `musea-server`
 
-**Musea Client**
-- Teilweise mit TDD entwickelt
-- Wichtigste Funktionen mit Unit Tests abgedeckt
-- keine e2e-tests: e2e-tests werden durch Musea Guide und Musea Admin abgedeckt
+## Testabdeckung
+  - **Unit Tests**: Jest
+  - **E2E Tests**: WebdriverIO für User-Flows in Guide/Admin
+  - **Manuelle Tests**: DMX-Hardware, große Files (>1GB), Zusammenspiel der Apps
 
-**Musea Server**
-- Teilweise mit TDD entwickelt
-- Wichtigste Funktionen mit Unit Tests abgedeckt
-- Testen der Netzwerk-Kommunikation mit e2e-tests
-
-**Musea Guide/Admin**
-- Wichtigste Funktionen mit Unit Tests abgedeckt (ausgenommen Views)
-- e2e-tests für die relevantesten Funktionen der Apps
-
-**Musea Player**
-- Wichtigste Funktionen mit Unit Tests abgedeckt
-
-**Manuelle Tests**
-- das Zusammenspiel der Apps immer auch manuell testen
-- DMX-Signale beim Musea Player (z.B. mit com0com um Signale an der COM-Schnittstelle zu überprüfen)
-- Bei Updates in der Netzwer-Kommunikation auch mit grossen Files >1 GB testen
-
-## Mögliche Erweiterungen
-Die Bibliothek Musea Server wurde mit der Idee entwickelt, in verschiedenen Medien-Playern einsetzbar zu sein.
-Momentan gibt es einen Standard-Player, der Videos und Bilder abspielen kann: [Musea Player](https://github.com/enniomariani/Musea-Player).
+## Musea Player Rollen
+- **Default:** Empfängt Medien und Befehle
+- **Controller:** Wie Default + speichert zusätzlich Datenstruktur (contents.json)
