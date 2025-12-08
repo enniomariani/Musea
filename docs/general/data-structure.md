@@ -12,28 +12,37 @@
 | **Musea Guide**    | App zur Steuerung der Medienstationen.                                                                           |
 | **Controller-App** | Musea Player mit «Controller»-Rolle, speichert die «contents»-Datei (Metainformationen zu den Contents).         |
 
-## Datenstruktur
+## Aufbau der Datenstruktur
 
-### Musea Admin
-- Erstellen von Ordnern mit beliebig vielen Unterordnern
-- Erstellen von Contents in den Ordnern
-- Jedem Musea Player der aktuellen Medienstation kann pro Content ein Medium zugeordnet werden
-- Speichern der Datenstruktur auf dem Musea Player mit der Rolle "Controller"
-
-**Info:** Medien können gemischt werden:  
-- Media Player 1 hat ein Video,  
-- Media Player 2 ein Bild.
-
-In einem Content kann auch ein Player leer bleiben.
-
----
-
-### Musea Guide
-- Lädt die Datenstruktur vom Musea Player mit der Rolle "Controller" herunter
-- Stellt die Ordnerstruktur dar
-- Benutzer:innen können Contents abspielen
-- Zeigt an, welcher Medientyp auf welchem Musea Player läuft
-
----
 
 <img src="../images/musea-datastructure.drawio.png" alt="datastructure-image">
+
+**Ordner**
+- Können beliebig viele Unterordner enthalten
+- Dienen zur Organisation von Contents
+
+**Inhalte (Contents)**
+- Liegen in Ordnern
+- Enthalten Medien für einen oder mehrere Player
+- Jedem Player kann pro Content genau ein Medium zugewiesen werden
+
+**Medien**
+- Videos, Bilder
+- Werden spezifischen Playern zugewiesen
+- Können gemischt werden (Player 1: Video, Player 2: Bild)
+
+💡 **Beispiel**: Ein Content "Gemälde XY" kann auf Player 1 ein Detailbild zeigen, 
+während Player 2 ein Erklärvideo abspielt.
+
+---
+
+## Verwaltung
+
+**Musea Admin**
+- Erstellt und verwaltet diese Struktur
+- Speichert sie auf dem Musea Player mit der Rolle "Controller"
+
+**Musea Guide**
+- Lädt die Struktur vom Controller
+- Sendet play/pause/etc. Befehle an Musea Player
+
