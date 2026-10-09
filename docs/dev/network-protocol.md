@@ -120,6 +120,23 @@ Kein Einfluss auf Bilder.
 
 ---
 
+### `media.control.subs`
+**Richtung:** Client → Server
+
+Setzt die Sprache der Untertitel. Wenn der Befehl ohne Sprache gesendet wird, werden die Untertitel deaktiviert.
+
+**Anfrage:**
+- `lang` (string): Sprache im Format ISO639-2T (3 Zeichen)
+
+**Antwort:** Keine
+
+**Beispiel:**
+```javascript
+['media', 'control', 'subs', 'deu']
+```
+
+---
+
 ### `media.control.sync`
 **Richtung:** Client → Server
 
