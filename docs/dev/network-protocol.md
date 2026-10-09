@@ -58,7 +58,7 @@ Löscht Medium mit der angegebenen ID auf dem Server.
 Spielt Video oder Bild auf dem Server ab.
 
 **Anfrage:**
-- `id` (string): Medium-ID (0-X)
+- `id` (string): Medium-ID (0-X) / wird keine id mitgegeben, wird ein aktuell pausiertes video weitergespielt
 
 **Antwort:** Keine
 
